@@ -1,0 +1,36 @@
+<body>
+    <div class="bonito">
+        <h1>Model</h1>
+        <h2>Prompt</h2>
+        <p>bin/rails generate model Article title:string body:text</p>
+        <p>bin/rails db:migrate</p>
+        <p>bin/rails console</p>
+        <p>irb> article = Article.new(title: "Hello Rails", body: "I am on Rails!")</p>
+        <p>ibr>article.save</p>  
+        <p>ibr>article</p>
+        <p>irb>Article.find(1)</p>
+        <p>irb>Article.all</p>
+        <a href="http://localhost:3000/articles3"><button>Próximo</button></a>
+    </div> 
+</body>
+</html>
+<style>
+    .bonito{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bonito > a button{
+        margin-bottom: 20px;
+        background: #069cc2;
+        border-radius: 6px;
+        padding: 15px;
+        cursor: pointer; 
+        color: #fff; 
+        border: none; 
+        font-size: 16px;
+    }
+</style>
+
+

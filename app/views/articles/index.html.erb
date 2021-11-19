@@ -1,0 +1,33 @@
+<body>
+    <div class="bonito">
+      <h1>Articles</h1>
+      <ul>
+        <% @articles.each do |article| %>
+        <li>
+          <%= article.title %>
+        </li>
+      <% end %>
+      </ul>
+    </div> 
+</body>
+</html>
+<style>
+    .bonito{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bonito > a button{
+        margin-bottom: 20px;
+        background: #069cc2;
+        border-radius: 6px;
+        padding: 15px;
+        cursor: pointer; 
+        color: #fff; 
+        border: none; 
+        font-size: 16px;
+    }
+</style>
+
+
